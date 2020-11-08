@@ -85,7 +85,6 @@ class Calculator {
 	}
 
 	update() {
-		this.getTextWidth(this.currentText.innerText);
 		this.currentText.innerText = this.getDisplayNumber(this.currentValue);
 		if (this.operation != null) {
 			this.previousText.innerText = `${this.getDisplayNumber(
