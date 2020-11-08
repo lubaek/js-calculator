@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #8a6dd9;
+	background: -webkit-linear-gradient(to right, #a044ff, #8a6dd9);
+	background: linear-gradient(to right, #a044ff, #8a6dd9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	margin: 70px 0;
+	width: 300px;
+	height: 480px;
+	background-color: #20354a;
+	-webkit-box-shadow: 0px 0px 28px -6px #20354a;
+	box-shadow: 0px 0px 28px -6px #20354a;
+}
+
+.result {
+	height: 100px;
+	background-color: #ffd157;
+	text-align: right;
+}
+
+.result p {
+	padding: 10px 20px;
+	font-weight: 300;
+	color: #20354a;
+}
+.previous p {
+	font-size: 20px;
+}
+
+.current p {
+	font-size: 35px;
+	height: auto;
+	width: auto;
+}
+
+.calculator-operands {
+	height: 40px;
+	margin: 10px 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 20px;
+}
+
+.calculator-numbers {
+	padding: 20px 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+}
+
+.operand,
+.equal-btn {
+	color: #fff;
+	font-size: 30px;
+	line-height: 1;
+}
+
+.operand:hover,
+.equal-btn:hover {
+	color: #85ef47;
+}
+
+.times {
+	padding-bottom: 5px;
+}
+
+button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-family: "Roboto", sans-serif;
+	transition: all 0.2s ease-in-out;
+}
+
+.number,
+.clear-btn {
+	height: 70px;
+	font-size: 35px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.number:hover,
+.clear-btn:hover {
+	color: #ffd157;
+}
